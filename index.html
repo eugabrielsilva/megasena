@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+    <title>Gerador Mega-Sena</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Gerador Mega-Sena</h1>
+        <h5>Quantos jogos você quer gerar?</h5>
+        <div class="form">
+            <input onkeyup="enter(event)" min="1" id="qtd" type="number" value="1" id="qtd" class="form-control">
+            <button onclick="gerarJogos()" class="btn btn-success ml-3">Gerar</button>
+            <button onclick="limpar()" class="btn btn-light ml-2">Limpar</button>
+        </div>
+        <div id="jogos"></div>
+        <div class="copy">
+            Desenvolvido por <a href="https://eugabrielsilva.tk" target="_blank">Gabriel Silva</a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
